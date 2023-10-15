@@ -20,8 +20,18 @@
             text-align: center;
         }
 
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
         main {
             padding: 2rem;
+        }
+
+        section {
+            margin-bottom: 20px;
         }
 
         footer {
@@ -39,22 +49,39 @@
 <body>
 <header>
     <h1>Welcome to My Portfolio</h1>
+    <nav>
+        <a href="http://54.89.199.187:3000/about">About</a> |
+        <a href="http://54.89.199.187:3000/projects">Projects</a> |
+        <a href="http://54.89.199.187:3000/contacts">Contact</a>
+    </nav>
 </header>
 
 <main>
-    <p>Hello, I'm [Your Name]. I am a passionate developer interested in creating amazing websites and applications. This is my portfolio where I showcase my work and skills.</p>
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Hello, I'm [Your Name]. I am a passionate developer interested in creating amazing websites and applications. This is my portfolio where I showcase my work and skills.</p>
+    </section>
 
-    <h2>Skills</h2>
-    <ul>
-        <li>HTML5, CSS3, JavaScript</li>
-        <li>React, Node.js, Express.js</li>
-        <li>Database Management (SQL, MongoDB)</li>
-        <!-- Add more skills as necessary -->
-    </ul>
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project">
+            <h3>Project 1</h3>
+            <p>Description of Project 1.</p>
+        </div>
+        <div class="project">
+            <h3>Project 2</h3>
+            <p>Description of Project 2.</p>
+        </div>
+        <!-- Add more project items as necessary -->
+    </section>
 
-    <h2>Experience</h2>
-    <p>[Company Name] - Web Developer (Month Year - Present)</p>
-    <!-- Add more experience details as necessary -->
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Email: harpreet@gmail.com</p>
+        <p>GitHub: <a href="https://github.com">github.com</a></p>
+        <p>LinkedIn: <a href="https://linkedin.com">linkedin.com</a></p>
+        <!-- Add more contact information as necessary -->
+    </section>
 </main>
 
 <footer>
